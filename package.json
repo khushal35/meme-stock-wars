@@ -1,0 +1,26 @@
+{
+  "name": "meme-stock-wars",
+  "version": "1.0.0",
+  "description": "A GameStop-style trading battle game with real-time Nash Equilibrium analysis",
+  "scripts": {
+    "install:all": "cd backend && npm install && cd ../frontend && npm install",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm run dev",
+    "dev": "npm run start"
+  },
+  "keywords": [
+    "game-theory",
+    "nash-equilibrium",
+    "multiplayer",
+    "websocket",
+    "react",
+    "typescript",
+    "trading-game"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
